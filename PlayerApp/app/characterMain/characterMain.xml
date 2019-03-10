@@ -1,0 +1,22 @@
+<Page class="page"
+    navigatingTo="onNavigatingTo"  
+    xmlns="http://schemas.nativescript.org/tns.xsd">
+
+    <ActionBar class="action-bar">
+        <Label class="action-bar-title" text="Home"></Label>
+    </ActionBar>
+
+    <GridLayout columns="*"
+                rows="*, auto">
+        <StackLayout row="0">
+            <Label text="content"></Label>
+        </StackLayout>
+        <bottomNav:BottomNavigation tabs="{{ tabs }}"
+                                    activeColor="green"
+                                    inactiveColor="red"
+                                    backgroundColor="black"
+                                    keyLineColor="black"
+                                    loaded="bottomNavigationLoaded"
+                                    row="1"></bottomNav:BottomNavigation>
+    </GridLayout>
+</Page>
