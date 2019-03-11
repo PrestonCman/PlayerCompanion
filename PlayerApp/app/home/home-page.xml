@@ -7,6 +7,6 @@
     </ActionBar>
 
     <GridLayout>
-        <!-- Add your page content here -->
+        <Label text="Hello world!"/>
     </GridLayout>
 </Page>
