@@ -1,0 +1,27 @@
+<Page class="page"
+    navigatingTo="onNavigatingTo"  
+    xmlns="http://schemas.nativescript.org/tns.xsd">
+
+    <ActionBar class="action-bar">
+        <Label class="action-bar-title" text="Spells"></Label>
+    </ActionBar>
+
+<TabView androidTabsPosition="bottom">
+         <TabViewItem class="charTab" title="Inv" text="inventory-page" onTap="navigate">
+            <Label id="inventory" defaultPage="inventory-page" textWrap="true" />
+         </TabViewItem>
+         <TabViewItem class="charTab" title="Misc" text="character-page" onTap="navigate">
+            <Label defaultPage="character-info" textWrap="true"></Label>
+         </TabViewItem>
+         <TabViewItem class="charTab" title="Main" text="main-page" onTap="navigate">
+            <Label id="main" defaultPage="main-page" textWrap="true"/>
+         </TabViewItem>
+    
+         <TabViewItem class="charTab" title="Com" text="combat-page" onTap="navigate">
+            <Label id="charInf" defaultPage="combat-page" textWrap="true"/>
+         </TabViewItem>
+         <TabViewItem class="charTab" title="Spell" text="spells-page" onTap="navigate">
+            <Label id="spells" defaultPage="spells-page" textWrap="true"/>
+        </TabViewItem>
+    </TabView>
+</Page>

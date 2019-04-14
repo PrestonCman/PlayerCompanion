@@ -34,7 +34,7 @@ exports.openDelete=function(args){
         moduleName:"home/delete-page",
         characters:page.bindingContext.characters
     }
-    page.frame.navigate(navigation);
+    page.frame.topmost().navigate(navigation);
 }
 
 function openModal(args) {

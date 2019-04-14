@@ -49,14 +49,3 @@ components that have the btn class name.
 .charTab{
     font-size: 10;
 }
-
-.TOC {
-    background-color: cornflowerblue;
-    color: black;
-    padding: 10px;
-    text-align: center;
-}
-
-.directory {
-    background-color: palevioletred;
-}

@@ -1,0 +1,14 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd" shownModally="onShownModally" >
+    <StackLayout>
+        <GridLayout rows="50, 50, 50" columns="* 3*">
+            <Label class = "modal-lbl" row="0" col="0" text="Name:" textWrap="true" />
+            <TextField row="0" col="1" hint="Enter Name Here..." text="{{ charName }}" />
+            <Label class = "modal-lbl"  row="1" col="0" text="Race:" textWrap="true" />
+            <TextField text="{{ race }}" hint="Enter Race Here..." row="1" col="1" />
+            <Label class = "modal-lbl" row="2" col="0" text="Class:" textWrap="true" />
+            <TextField text="{{ charClass }}" hint="Enter Class Here..." row="2" col="1" />
+        </GridLayout>
+        <Button text="Add Character" tap="onAddButtonTap" />
+        <Button text="Cancel" tap = "onCancelButtonTap"/>
+    </StackLayout>
+</Page>
