@@ -1,62 +1,37 @@
 <Page class="page"
-    navigatingTo="onNavigatingTo"  
+    navigatingTo="onNavigatingTo"
     xmlns="http://schemas.nativescript.org/tns.xsd">
-<ActionBar class="action-bar">
-        <Label class="action-bar-title" text="{{CurrentTab}}"></Label>
+
+    <ActionBar class="TOC">
+        <Label class="action-bar-title" text="{{tab}}"></Label>
     </ActionBar>
 
-<TabView androidTabsPosition="bottom" selectedIndex="{{tabSelectedInex}}" selectedIndexChange="onSelectedIndexChange">
-        <TabView.items>
-                <TabViewItem class="charTab" title="Inv" text="inventory-page">
-                        <TabViewItem.view>
-                        <GridLayout>
-                        <ActionBar class="action-bar">
-                        <Label class="action-bar-title" text="Inventory"></Label>
-                        </ActionBar>
-                        <Label id="inventory" text="1" defaultPage="inventory-page" textWrap="true" />
-                        </GridLayout>
-                        </TabViewItem.view>
-                </TabViewItem>
-        <TabViewItem class="charTab" title="Misc" text="character-page">
-                <TabViewItem.view>
-                <GridLayout>
-                <ActionBar class="action-bar">
-                <Label class="action-bar-title" text="Character Info"></Label>
-                </ActionBar>
-                <Label defaultPage="character-info" text="2" textWrap="true"></Label>
-                </GridLayout>
-                </TabViewItem.view>
-        </TabViewItem>
-        <TabViewItem class="charTab" title="Main" text="main-page">
-                <TabViewItem.view>
-                <GridLayout>
-                <ActionBar class="action-bar">
-                <Label class="action-bar-title" text="Main"></Label>
-                </ActionBar>
-                <Label id="main" text="3" defaultPage="main-page" textWrap="true"/>
-                </GridLayout>
-                </TabViewItem.view>
-        </TabViewItem>
-        <TabViewItem class="charTab" title="Com" text="combat-page">
-                <TabViewItem.view>
-                <GridLayout>
-                <ActionBar class="action-bar">
-                        <Label class="action-bar-title" text="Combat Page"></Label>
-                </ActionBar>
-                <Label id="charInf" text="4" defaultPage="combat-page" textWrap="true"/>
-                </GridLayout>
-                </TabViewItem.view>
-        </TabViewItem>
-        <TabViewItem class="charTab" title="Spell" text="spells-page">
-                <TabViewItem.view>
-                <GridLayout>
-                <ActionBar class="action-bar">
-                        <Label class="action-bar-title" text="Spell"></Label>
-                </ActionBar>
-                <Label id="spells" text="5" defaultPage="spells-page" textWrap="true"/>
-                </GridLayout>
-                </TabViewItem.view>
-        </TabViewItem>
-        </TabView.items>
-    </TabView>
+<TabView loaded="onLoaded" selectedIndex="{{tabSelectedIndex}}" androidTabsPosition="bottom">
+    <TabViewItem class="charTab" title="Inv" text="Inventory">
+        <StackLayout class="TOC">
+                <Label class="directory" text="Inventory" textWrap="true"/>
+                <Button class="directory" text="Add Character" tap="openModal" textWrap="true" />
+        </StackLayout>
+    </TabViewItem><TabViewItem class="charTab" title="Misc" text="Character Information">
+        <StackLayout class="TOC">
+                <Label class="directory" text="Character Information" textWrap="true"/>
+                <Button class="directory" text="Add Character" tap="openModal" textWrap="true" />
+        </StackLayout>
+    </TabViewItem><TabViewItem class="charTab" title="Main" text="Character">
+        <StackLayout class="TOC">
+                <Label class="directory" text="Character" textWrap="true"/>
+                <Button class="directory" text="Add Character" tap="openModal" textWrap="true" />
+        </StackLayout>
+    </TabViewItem><TabViewItem class="charTab" title="Com" text="Combat">
+        <StackLayout class="TOC">
+                <Label class="directory" text="Combat" textWrap="true"/>
+                <Button class="directory" text="Add Character" tap="openModal" textWrap="true" />
+        </StackLayout>
+    </TabViewItem><TabViewItem class="charTab" title="Spell" text="Spells">
+        <StackLayout class="TOC">
+                <Label class="directory" text="Spells" textWrap="true"/>
+                <Button class="directory" text="Add Character" tap="openModal" textWrap="true" />
+        </StackLayout>
+    </TabViewItem>
+</TabView>
 </Page>

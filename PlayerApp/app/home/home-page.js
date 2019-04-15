@@ -22,6 +22,7 @@ function onNavigatingTo(args) {
 }
 exports.openCharacter=function(args)
 {
+    settings.setString("tab", "Character");
     var navigation = {
         moduleName:"./main/main-page",
         //character:page.bindingContext.settings.getString(args.object.text)

@@ -53,10 +53,14 @@ components that have the btn class name.
 .TOC {
     background-color: cornflowerblue;
     color: black;
-    padding: 10px;
     text-align: center;
+    font-size: 40px;
 }
 
 .directory {
     background-color: palevioletred;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
 }
